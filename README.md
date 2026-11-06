@@ -15,3 +15,6 @@ This program uses NASA's EPIC API to retrieve photographs of Earth taken on a sp
 
 ## Built with
 Python, requests and the NASA EPIC API
+
+## Function Decomposition Diagram
+![Birthday Earth Function Diagram](Birthday%20Earth%20-%20Funciton%20Chart%20(1).png)
