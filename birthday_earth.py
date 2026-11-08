@@ -25,3 +25,6 @@ if __name__ == "__main__":
             print(f"{key}: {value}")
     else:
         print("No photos for this date.")
+# ==========================================
+# COMPLETED BIRTHDAY EARTH PROGRAM
+# ==========================================
