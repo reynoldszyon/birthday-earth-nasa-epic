@@ -46,3 +46,10 @@ def get_epic_photos(api_key, date):
   else:
     print(f"Data not received. Status code: {response.status_code}")
     return None
+# Testing for Function 1
+photos = get_epic_photos("DEMO_KEY", "2016-03-08")
+
+if photos:
+    print("Photos found:", len(photos))
+else:
+    print("No photos available.")
