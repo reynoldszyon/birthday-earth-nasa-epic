@@ -53,3 +53,11 @@ if photos:
     print("Photos found:", len(photos))
 else:
     print("No photos available.")
+# Function 2 - The program will be selecting a random photo from the list.
+
+def select_random_photo(photos):
+    if photos:
+        selected_photo = random.choice(photos)
+        return selected_photo
+    else:
+        return None
