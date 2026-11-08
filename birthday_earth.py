@@ -32,3 +32,6 @@ if __name__ == "__main__":
 # Name: Zy'on Reynolds
 # Description: This program will use NASA's EPIC API key to retrieve photographs of earth taken on a user's birhtday.
 # It will randomly select a photograph and display its image link with infomation provided.
+import requests
+import random
+# Function 1 - wWll be retrieveing NASA EPIC photos from the birthday the user enters.
