@@ -61,3 +61,11 @@ def select_random_photo(photos):
         return selected_photo
     else:
         return None
+# Testing for Function 2
+selected_photo = select_random_photo(photos)
+
+if selected_photo:
+    for key, value in selected_photo.items():
+        print(key, ":", value)
+else:
+    print("No photograph was selected.")
