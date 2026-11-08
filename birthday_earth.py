@@ -35,3 +35,14 @@ if __name__ == "__main__":
 import requests
 import random
 # Function 1 - wWll be retrieveing NASA EPIC photos from the birthday the user enters.
+def get_epic_photos(api_key, date):
+  endpoint_url = f"https://api.nasa.gov/EPIC/api/natural/date/{date}"
+  params = {"api_key": api_key}
+
+  response = requests.get(endpoint_url, params=params)
+
+  if response.status_code == 200:
+                  return response.json()
+  else:
+    print(f"Data not received. Status code: {response.status_code}")
+    return None
