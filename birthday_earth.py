@@ -1,3 +1,6 @@
+# ==========================================
+# ORIGINAL API TESTING EXAMPLE
+# ==========================================
 import requests
 
 def retrieve_epic_photos(api_key, date):
