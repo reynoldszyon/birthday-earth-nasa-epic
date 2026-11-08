@@ -69,3 +69,12 @@ if selected_photo:
         print(key, ":", value)
 else:
     print("No photograph was selected.")
+# Function 3 - Will be creating the link to the NASA photogrpah using the selected photo's "image" value and the date entersed by the user.
+def create_photo_url(photo, date):
+    image_name = photo["image"]
+
+    year, month, day = date.split("-")
+
+    photo_url = f"https://epic.gsfc.nasa.gov/archive/natural/{year}/{month}/{day}/png/{image_name}.png"
+
+    return photo_url
