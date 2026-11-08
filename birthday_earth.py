@@ -78,3 +78,7 @@ def create_photo_url(photo, date):
     photo_url = f"https://epic.gsfc.nasa.gov/archive/natural/{year}/{month}/{day}/png/{image_name}.png"
 
     return photo_url
+# Testing for Function 3
+photo_url = create_photo_url(selected_photo, "2016-03-08")
+
+print("NASA Photo Link:", photo_url)
