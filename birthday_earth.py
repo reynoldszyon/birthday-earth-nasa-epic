@@ -83,3 +83,31 @@ photo_url = create_photo_url(selected_photo, "2016-03-08")
 
 print("NASA Photo Link:", photo_url)
 # Main Function
+api_key = input("Enter your Nasa API key:")
+birthday = input("Enter your birthday in the format YYYY-MM-DD: ")
+
+# Retrieving the NASA photographs for the birthday
+photos = get_epic_photos(api_key, birthday)
+# Check if photographs are available
+while photos is not None and len(photos) == 0:
+    print("No photos found for this date.")
+    birthday = input("Please enter another date (YYYY-MM-DD): ")
+    photos = get_epic_photos(api_key, birthday)
+
+if photos:
+    print("Number of photos available:", len(photos))
+
+    # Randomly select one photograph.
+    selected_photo = select_random_photo(photos)
+
+    if selected_photo:
+        print("\nSelected Photograph:")
+        for key, value in selected_photo.items():
+            print(key, ":", value)
+
+        # Creating the photograph link
+        photo_url = create_photo_url(selected_photo, birthday)
+        print("\nView your NASA photograph:")
+        print(photo_url)
+    else:
+        print("No photos found for this date.")
