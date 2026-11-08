@@ -28,3 +28,7 @@ if __name__ == "__main__":
 # ==========================================
 # COMPLETED BIRTHDAY EARTH PROGRAM
 # ==========================================
+# Birthday Earth: NASA EPIC PROJECT
+# Name: Zy'on Reynolds
+# Description: This program will use NASA's EPIC API key to retrieve photographs of earth taken on a user's birhtday.
+# It will randomly select a photograph and display its image link with infomation provided.
